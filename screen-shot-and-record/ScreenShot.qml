@@ -40,7 +40,7 @@ PanelWindow {
     Process {
         id: screenshotProc
         property string outputName: root.screen ? root.screen.name : "unknown"
-        property string filename: (Quickshell.env.HOME + "/.cache/screen-%1.png").arg(outputName.replace(/[^a-zA-Z0-9_-]/g, "_"))
+        property string filename: (Quickshell.env("HOME") + "/.cache/screen-%1.png").arg(outputName.replace(/[^a-zA-Z0-9_-]/g, "_"))
 
         command: ["grim", "-o", outputName, filename]
         running: false
@@ -161,7 +161,7 @@ PanelWindow {
         var safeOutputName = outputName.replace(/[^a-zA-Z0-9_-]/g, "_")
 
         // 生成带显示器名称的文件名
-        var tempFile = (Quickshell.env.HOME + "/.cache/screen-%1.png").arg(safeOutputName)
+        var tempFile = (Quickshell.env("HOME") + "/.cache/screen-%1.png").arg(safeOutputName)
         const scaleRatio = CompositorService.getDisplayScale(root.screen.name)
         const scaledX = Math.round(x * scaleRatio)
         const scaledY = Math.round(y * scaleRatio)
