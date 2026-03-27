@@ -8,7 +8,7 @@
       "official": false,
       "author": "Pulsar",
       "description": "A screenshot plugin with OCR, Google Lens integration, and screen recording. Only Support Hyprland.",
-      "repository": "https://github.com/noctalia-dev/noctalia-plugins",
+      "repository": "https://github.com/Pulsar33550336/pulsar-ns-plugins",
       "minNoctaliaVersion": "3.6.0",
       "license": "GPL-3.0-or-later",
       "tags": [
@@ -17,7 +17,7 @@
         "Utility",
         "Hyprland"
       ],
-      "lastUpdated": "2026-03-22T19:17:03+01:00"
+      "lastUpdated": "2026-03-27T19:08:33+01:00"
     }
   ]
 }
